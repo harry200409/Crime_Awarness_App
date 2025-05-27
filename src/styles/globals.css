@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    /* Primary Colors */
+    --primary: 0 76% 50%; /* #D32F2F */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    
+    --dark-blue: 213 52% 25%; /* #1E3A5F */
+    --dark-blue-foreground: 0 0% 100%;
+
+    /* Secondary Colors */
+    --secondary: 0 0% 62%; /* #9E9E9E */
+    --secondary-foreground: 0 0% 13%; /* #212121 */
+
+    --warning: 30 100% 48%; /* #F57C00 */
+    --warning-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --muted: 0 0% 88%; /* #E0E0E0 */
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 210 100% 50%; /* #007BFF */
+    --accent-foreground: 0 0% 100%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --border: 0 0% 88%; /* #E0E0E0 */
+    --input: 0 0% 88%; /* #E0E0E0 */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 13%; /* #212121 */
+    --foreground: 0 0% 98%;
+ 
+    /* Primary Colors in Dark Mode */
+    --primary: 0 76% 50%; /* #D32F2F */
+    --primary-foreground: 0 0% 100%;
+
+    --dark-blue: 213 52% 25%; /* #1E3A5F */
+    --dark-blue-foreground: 0 0% 100%;
+
+    /* Secondary Colors in Dark Mode */
+    --secondary: 0 0% 62%; /* #9E9E9E */
+    --secondary-foreground: 0 0% 100%;
+
+    --warning: 30 100% 48%; /* #F57C00 */
+    --warning-foreground: 0 0% 100%;
+
+    /* UI Elements in Dark Mode */
+    --muted: 0 0% 20%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 210 100% 50%; /* #007BFF */
+    --accent-foreground: 0 0% 100%;
+
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+} 
