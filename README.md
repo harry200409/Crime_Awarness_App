@@ -42,17 +42,16 @@
      ```bash
      npm run dev
      ```
-  4. Open http://localhost:5173 in your browser
+  4. Open localhost in your browser
  
-
-    ## Available Scripts
-    - **npm run dev** - Start development server
-    - **npm run build** - Build for production
-    - **npm run build:dev** - Build for development
-    - **npm run preview** - Preview production build
-    - **npm run lint** - Run ESLint
+  ## Available Scripts
+  - **npm run dev** - Start development server
+  - **npm run build** - Build for production
+  - **npm run build:dev** - Build for development
+  - **npm run preview** - Preview production build
+  - **npm run lint** - Run ESLint
     
-    ## Project Structure
+   ## Project Structure
     
     ```text
     src/
@@ -65,9 +64,9 @@
       └── integrations/   # Third-party integrations
     ```
     
-    ## About
+  ## About
     
-    SuratSafe - Making Surat safer through community awareness and technological innovation.
+  SuratSafe - Making Surat safer through community awareness and technological innovation.
 
 
 
